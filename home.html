@@ -70,11 +70,14 @@ h1, h2, h3, h4, h5, p {
 <h1>Ivory's Website:</h1>
 <p>We're all in hell anyways.</p>
 
-<button id="bgcolor1" onclick="myFunction()">BG Color</button>
+<button id="bgcolor1">BG Color</button>
 
 <script>
-function myFunction() {
-  document.getElementById("html").style.background = "radial-gradient(circle, rgba(255,255,240,0.14011601039341515) 0%, rgba(0,0,0,1) 100%);"
+document.getElementById("bgcolor1").onclick = function() {
+bgcol()
+};
+function bgcol() {
+  document.getElementById("html").style.background = "radial-gradient(circle, rgba(255,255,240,0.14011601039341515) 0%, rgba(0,0,0,1) 100%)";
 }
 </script>
 
