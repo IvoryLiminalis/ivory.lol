@@ -1,9 +1,9 @@
-<html>
+<html id="html">
 <head>
 <div id="main">
 </div>
 <style>
-#main {
+#html {
   background-color: black;
   background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
   height: auto;
@@ -17,7 +17,22 @@
   );
 }
 
-#main::before {
+#extra-div-1 {
+  background-color: black;
+  background: radial-gradient(rgba(255, 255, 240, 1), black 120%);
+  height: auto;
+  color: white;
+  font: 12px Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  transition: 2s;
+  );
+}
+
+#html::after {
   content: " ";
   display: block;
   position: absolute;
@@ -94,7 +109,7 @@ document.getElementById("bgcolor1").onclick = function() {
 bgcol()
 };
 function bgcol() {
-  document.getElementById("main").style.opacity = "0"
+  document.getElementById("html").style.opacity = "0"
   document.getElementById("extra-div-1").style.opacity = "1"
 }
 </script>
