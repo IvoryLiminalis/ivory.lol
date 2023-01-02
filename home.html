@@ -10,10 +10,12 @@
   text-shadow: 0 0 5px #C8C8C8;
   background-size: cover;
   overflow: hidden;
+  z-index: 0;
+  transition: 2s;
   );
 }
 
-#html::after {
+#html::before {
   content: " ";
   display: block;
   position: absolute;
@@ -32,6 +34,17 @@
   background: #0080FF;
   text-shadow: none;
 }
+  
+#extra-div-1 {
+    opacity: 0;
+    background: radial-gradient(rgba(255, 255, 240, 1), black 120%)
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: 2s;
 </style>
 <div id="scan">
 </div>
@@ -68,7 +81,8 @@ h1, h2, h3, h4, h5, p {
 
 <h1>Ivory's Website:</h1>
 <p>We're all in hell anyways.</p>
-
+<div id="extra-div-1">
+</div>
 <button id="bgcolor1">BG Color</button>
 
 <script>
@@ -76,8 +90,8 @@ document.getElementById("bgcolor1").onclick = function() {
 bgcol()
 };
 function bgcol() {
-  document.getElementById("html").style.background = "radial-gradient(rgba(255, 255, 240, 1), black 120%)"
-  document.getElementById("html").style.transition = "background 2s"
+  document.getElementById("html").style.opacity = "0"
+  document.getElementById("extra-div-1").style.opacity = "1"
 }
 </script>
 
