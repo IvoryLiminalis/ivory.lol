@@ -29,7 +29,7 @@
   text-shadow: 0 0 5px #000000;
   background-size: cover;
   overflow: hidden;
-  z-index: 1;
+  z-index: -1;
   opacity: 0;
   transition: 2s;
   color: black;
@@ -105,7 +105,7 @@ bgcol()
 };
 function bgcol() {
   document.getElementById("html").style.opacity = "0"
-  document.getElementById("html").style.zIndex = "2"
+  document.getElementById("html::before").style.zIndex = "0"
   document.getElementById("html::before").style.opacity = "0.5"
   document.getElementById("scan").style.backgroundColor = "rgba(0, 255, 0, 1)"
 }
