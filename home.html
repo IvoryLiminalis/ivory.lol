@@ -17,7 +17,7 @@
   );
 }
 
-#extra-div-1 {
+#html::before {
   background-color: black;
   background: radial-gradient(rgba(230, 215, 255, 1), black 120%);
   height: auto;
@@ -101,7 +101,8 @@ bgcol()
 };
 function bgcol() {
   document.getElementById("html").style.opacity = "0"
-  document.getElementById("extra-div-1").style.opacity = "0.5"
+  document.getElementById("html::before").style.opacity = "0.5"
+  document.getElementById("scan").style.backgroundColor = "rgba(0, 255, 0, 1)"
 }
 </script>
 
