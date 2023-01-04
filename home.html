@@ -6,7 +6,9 @@
 #html {
   background-color: black;
   background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
-  height: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   color: white;
   font: 12px Inconsolata, monospace;
   text-shadow: 0 0 5px #C8C8C8;
@@ -20,12 +22,14 @@
 #html::before {
   background-color: black;
   background: radial-gradient(rgba(230, 215, 255, 1), black 120%);
-  height: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   font: 12px Inconsolata, monospace;
   text-shadow: 0 0 5px #000000;
   background-size: cover;
   overflow: hidden;
-  z-index: 0;
+  z-index: 1;
   opacity: 0;
   transition: 2s;
   color: black;
@@ -74,7 +78,7 @@ h1, h2, h3, h4, h5, p {
 	height: 5px;
 	background-color: rgba(0, 255, 0, 1);
   position: absolute;
-  box-shadow: 0px 0px 8px 10px rgba(0, 255, 0, 0.49);
+  box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.49);
   animation-name: scan;
   animation-duration: 5s;
   animation-timing-function: linear;
