@@ -1,9 +1,7 @@
 <html id="html">
 <head>
-<div id="main">
-</div>
 <style>
-#html {
+#extra-div-2 {
   background-color: black;
   background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
   height: 100%;
@@ -60,10 +58,9 @@
   opacity: 1;
 }
 </style>
-<div id="scan">
-</div>
 </head>
 <body>
+<div id="scan"></div>
 <style>
 body {
   text-align: center;
@@ -93,6 +90,7 @@ h1, h2, h3, h4, h5, p {
 }
 </style>
 <div id="extra-div-1"></div>
+<div id="extra-div-2"></div>
 
 <h1>Ivory's Website:</h1>
 <p>We're all in hell anyways.</p>
@@ -105,7 +103,7 @@ bgcol()
 };
 function bgcol() {
   document.getElementById("html").style.opacity = "0"
-  document.getElementById("extra-div-1").style.opacity = "0.5"
+  document.getElementById("extra-div-1").style.opacity = "1"
   document.getElementById("scan").style.backgroundColor = "rgba(0, 255, 0, 1)"
 }
 </script>
