@@ -3,9 +3,6 @@
 <style>
 html {
   overflow: hidden;
-}
-  
-#extra-div-1 {
   background-color: black;
   background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
   height: 100%;
@@ -21,24 +18,6 @@ html {
   background-size: cover;
   overflow: hidden;
   z-index: 1;
-  transition: opacity 2s;
-  );
-}
-
-#extra-div-2 {
-  background-color: black;
-  background: radial-gradient(rgba(0, 15, 0, 1), black 120%);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  font: 12px Inconsolata, monospace;
-  text-shadow: 0 0 5px #000000;
-  background-size: cover;
-  overflow: hidden;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 2s;
-  color: black;
   );
 }
 
@@ -62,9 +41,6 @@ html::after {
   text-shadow: none;
 }
 
-#bgcolor1 {
-  opacity: 1;
-}
 </style>
 </head>
 <body id="body">
@@ -97,17 +73,10 @@ h1, h2, h3, h4, h5, p {
     100% { top: 600em }    
 }
 </style>
-<div id="extra-div-1">
-  <h1>Ivory's Website:</h1>
-  <p>We're all in hell anyways.</p>
-</div>
-<div id="extra-div-2">
-  <h1>Ivory's Website:</h1>
-  <p>We're all in hell anyways.</p>
-</div>
-<div id="extra-div-3">
-  <button id="bgcolor1">BG Color</button>
-</div>
+<h1>Ivory's Website:</h1>
+<p>We're all in hell anyways.</p>
+
+<button id="bgcolor1">BG Color</button>
 <script>
 document.getElementById("bgcolor1").onclick = function() {
 bgcol()
