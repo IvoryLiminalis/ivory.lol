@@ -43,7 +43,8 @@ html::after {
   text-shadow: none;
 }
 
-
+#one { position:relative }
+#two { position:absolute; top:50%; height:10em; margin-top:-5em }
 
 </style>
 </head>
@@ -70,8 +71,12 @@ html::after {
     100% { top: 600em }    
 }
 </style>
-  <h1><span style = "vertical-align:middle">Ivory's Website:</span></h1>
-<p><span style = "vertical-align:middle">IWe're all in hell anyways, so how about we enjoy the show?</span></p>
+<div id="one">
+  <div id="two">
+    <h1>Ivory's Website:</h1>
+    <p>We're all in hell anyways, so how about we enjoy the show?</p>
+  </div>
+</div>
 </body>
 </html>
 
