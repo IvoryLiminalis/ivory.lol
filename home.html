@@ -43,9 +43,13 @@ html::after {
   text-shadow: none;
 }
 
-#one { position:relative }
-#two { position:absolute; top:50%; height:10em; margin-top:-5em }
-
+#one {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 </style>
 </head>
 <body id="body">
@@ -72,10 +76,8 @@ html::after {
 }
 </style>
 <div id="one">
-  <div id="two">
     <h1>Ivory's Website:</h1>
     <p>We're all in hell anyways, so how about we enjoy the show?</p>
-  </div>
 </div>
 </body>
 </html>
