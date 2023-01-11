@@ -70,6 +70,11 @@ html::after {
   z-index: 3;
 }
 
+@keyframes scan {
+    0%   { top:   -1em }
+    100% { top: 600em }    
+}
+
 .scroller {
   height: 1.2em;
   line-height: 1.2em;
@@ -81,8 +86,7 @@ html::after {
   position: absolute;
   top: 0;
   animation: slide 5s infinite;
-  font-weight: bold;
-  
+  font-weight: bold; 
 }
 
 @keyframes slide {
@@ -98,11 +102,6 @@ html::after {
   100% {
     top: 0;
   }
-
-@keyframes scan {
-    0%   { top:   -1em }
-    100% { top: 600em }    
-}
 </style>
 <div id="one">
     <h1>Ivory's Website:</h1>
