@@ -75,37 +75,30 @@ html::after {
     100% { top: 600em }    
 }
 
-.scroller {
+.two {
   height: 1.2em;
-  line-height: 1.2em;
-  overflow: hidden;
-  width: 10em;
-  position: relative;
-}
-.scroller > span {
-  position: absolute;
-  top: 0;
-  animation: slide 5s infinite;
-  font-weight: bold; 
+ display: inline-block;
+color: #fff;
+position: relative;
+white-space: nowrap;
+top: 0;
+left: 0;
+-webkit-animation: move 5s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: 1s;
 }
 
-@keyframes slide {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: -1.2em;
-  }
-  75% {
-    top: -2.4em;
-  }
-  100% {
-    top: 0;
-  }
+  @keyframes move {
+  0%  { top: 0px; }
+  20% { top: -50px; }
+  40% { top: -100px; }
+  60% { top: -150px; }
+  80% { top: -200px; }
+}
 </style>
 <div id="one">
     <h1>Ivory's Website:</h1>
-    <p>We're all in hell anyways, so how about we <div class="scroller"><span>enjoy<br/>the<br/>show?</span></div>
+    <p>We're all in hell anyways, so how about we <div><span class="two">enjoy<br/>the<br/>show?</span></div>
 </div>
 </body>
 </html>
