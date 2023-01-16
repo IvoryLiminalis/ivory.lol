@@ -125,6 +125,24 @@ function Function1() {
   document.getElementById("two").style.opacity = "1";
   document.getElementById("button1").style.marginTop = "20px";
 }
+
+function Toggle1() {
+  var style = document.getElementById("one").style;
+  if( style.opacity == "1" ) {
+    style.opacity = "0";
+  } else {
+    style.opacity = "1";
+  }
+}
+
+function Toggle2() {
+  var style = document.getElementById("two").style;
+  if( style.opacity == "1" ) {
+    style.opacity = "0";
+  } else {
+    style.opacity = "1";
+  }
+}
 </script>
 
 <style>
