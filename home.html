@@ -63,10 +63,10 @@ html::after {
 
 </style>
 </head>
-<body>
+<body onload="document.body.style.opacity='1'">
 <div id="scan"></div>
 <style>
-#main-content {
+body {
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -91,7 +91,7 @@ html::after {
 }
 
 </style>
-<div id="main-content" onload=document.getElementById("main-content").style.opacity = "1";>
+<div id="main-content">
 <div id="one">
 	<h1>Ivory's Website:</h1>
 	<p>We're all in hell anyways, so how about we enjoy the show?</p>
