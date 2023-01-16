@@ -122,11 +122,55 @@ margin-top: 20px;
 
 .btn:hover{
 
-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+.btn:hover{
 padding: 20px 80px;
 white-space: nowrap;
 overflow: hidden;
-transform : translateY(-0px)
+animation: easeOutBounce 3s infinite;
+}
+
+@keyframes easeOutBounce {
+	0% {
+		transform: ScaleX(-0px);
+	}
+
+	12% {
+		transform: ScaleX(9.6px);
+	}
+
+	24% {
+		transform: ScaleX(19.2px);
+	}
+
+	36% {
+		transform: ScaleX(28.8px);
+	}
+
+	54% {
+		transform: ScaleX(43.2px);
+	}
+
+	74% {
+		transform: ScaleX(59.2px);
+	}
+
+	82% {
+		transform: ScaleX(65.6px);
+	}
+
+	92% {
+		transform: ScaleX(73.6px);
+	}
+
+	96% {
+		transform: ScaleX(76.8px);
+	}
+
+	100% {
+		transform: ScaleX(80px);
+	}
+
+}
 margin: 20px 20px;
 }
 
