@@ -129,7 +129,10 @@ border-radius: 6px;
 padding: 20px 80px;
 white-space: nowrap;
 overflow: hidden;
-@keyframes scale-easeOutBounce {
+animation: easeOutBounce 1s infinite;
+}
+
+@keyframes easeOutBounce {
 	0% {
 		transform: translateY(-0px);
 	}
@@ -169,8 +172,6 @@ overflow: hidden;
 	100% {
 		transform: translateX(80px);
 	}
-
-}
 
 }
 
