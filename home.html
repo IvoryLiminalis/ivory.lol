@@ -126,19 +126,57 @@ border-radius: 6px;
 }
 
 .btn:hover{
-
-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
 padding: 20px 80px;
 white-space: nowrap;
 overflow: hidden;
-transform : translateY(-0px)
+@keyframes scale-easeOutBounce {
+	0% {
+		transform: translateY(-0px);
+	}
+
+	12% {
+		transform: translateX(9.6px);
+	}
+
+	24% {
+		transform: translateX(19.2px);
+	}
+
+	36% {
+		transform: translateX(28.8px);
+	}
+
+	54% {
+		transform: translateX(43.2px);
+	}
+
+	74% {
+		transform: translateX(59.2px);
+	}
+
+	82% {
+		transform: translateX(65.6px);
+	}
+
+	92% {
+		transform: translateX(73.6px);
+	}
+
+	96% {
+		transform: translateX(76.8px);
+	}
+
+	100% {
+		transform: translateX(80px);
+	}
+
+}
+
 }
 
 
 
 </style>
-
-
 
 </body>
 </html>
