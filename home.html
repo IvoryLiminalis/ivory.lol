@@ -78,6 +78,7 @@ html::after {
 }
 
 .arrow {
+  position: relative;
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -90,25 +91,6 @@ html::after {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
-.arrow::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    margin-left: -0.5em;
-    bottom: -2em;
-    left: 50%;
-    box-sizing: border-box;
-    
-    border: 1em solid black;
-    border-color: transparent transparent #bada55 #bada55;
-    
-    transform-origin: 0 0;
-    transform: rotate(-45deg);
-    
-    box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
-  }
 
 #button1 {
   position: absolute;
