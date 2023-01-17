@@ -27,24 +27,6 @@ function Toggle1() {
   }
 }
 
-function KonaCommand() {
-const x = document.getElementById('one')
-const x2 = document.getElementById('two')
-const x3 = document.getElementById('three')
-var user_keys = [],
-    konacommand = '38,38,40,40,37,39,37,39,66,65';
-document.onkeydown = function(e){
-    user_keys.push(e.keyCode)
-
-    if (user_keys.toString().indexOf(konacommand) >= 0) {
-   		x2.style.transitionDelay = '1s';
-		x.style.transitionDelay = '0s';
-		x.style.opacity = '0';
-    		x2.style.opacity = '0';
-    		x3.style.opacity = '1';
-    }
-}
-
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -202,6 +184,16 @@ body {
 <div id="three">
 	<h1>you found a secret! return using the flag button.</div>
 </div>
+
+<!--                             _                
+ __    _ _  ______    ________ ___| |____ _   _   _ 
+ \ \  / | |/ |  _ \  |.  ___  |_  |____  | | | | | |
+(_| | | | ' /| | | |  | |   | | | |   / /| | | | | |
+ _| | | | . \| |_| |  | |___| | | |  / / | |/ /_/ / 
+(_| | |_|_|\_|____/   |_______| |_| /_/  |_______/  
+ /_/                                                
+
+-->
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
