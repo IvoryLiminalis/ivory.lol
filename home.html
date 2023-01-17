@@ -8,12 +8,14 @@ function Function1() {
 function Toggle1() {
   const x = document.getElementById('one')
   const x2 = document.getElementById('two')
+  const btn1 = document.getElementById('button1')
   if (x.style.opacity === '1') {
     x.style.opacity = '0';
     x2.style.opacity = '1';
   } else {
     x2.style.opacity = '0';
     x.style.opacity = '1';
+    btn1.style.marginTop = '0px';
   }
 }
 
