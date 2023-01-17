@@ -125,20 +125,16 @@ function Function1() {
 }
 
 function Toggle1() {
-  var style = document.getElementById("one").style;
-  if( style.opacity == "1 ) {
-    style.opacity = "0";
+  var x = document.getElementById("one");
+  var x2 = document.getElementById("two");
+  if (x2.style.opacity === "0") {
+    x2.style.opacity = "1";
   } else {
-    style.opacity = "1";
-  }
-}
-
-function Toggle2() {
-  var style = document.getElementById("two").style;
-  if( style.opacity == "1" ) {
-    style.opacity = "0";
+    x2.style.opacity = "0";
+    if (x.style.opacity === "0") {
+    x.style.opacity = "1";
   } else {
-    style.opacity = "1";
+    x.style.opacity = "0";
   }
 }
 </script>
