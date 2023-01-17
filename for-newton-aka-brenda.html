@@ -1,0 +1,277 @@
+<html>
+<head>
+<script>
+function Function1() {
+  document.getElementById('button1').style.marginTop = '20px';
+}
+
+function Toggle1() {
+  const x = document.getElementById('one')
+  const x2 = document.getElementById('two')
+  const x3 = document.getElementById('three')
+  const btn1 = document.getElementById('button1')
+  if (x.style.opacity === '1') {
+    x2.style.transitionDelay = '1s'
+    x.style.transitionDelay = '0s'
+    x.style.opacity = '0';
+    x2.style.opacity = '1';
+    x3.style.opacity = '0';
+  } else {
+    x2.style.transitionDelay = '0s'
+    x.style.transitionDelay = '1s'
+    x.style.opacity = '1';
+    x2.style.opacity = '0';
+    x3.style.opacity = '0';
+    btn1.style.marginTop = '0px';
+  }
+}
+
+function Toggle2() {
+  const x = document.getElementById('one')
+  const x2 = document.getElementById('two')
+  const x3 = document.getElementById('three')
+  const btn1 = document.getElementById('button2')
+  if (x.style.opacity === '1') {
+    x.style.transitionDelay = '0s'
+    x3.style.transitionDelay = '1s'
+    x.style.opacity = '0';
+    x2.style.opacity = '0';
+    x3.style.opacity = '1';
+  } else {
+    x3.style.transitionDelay = '0s'
+    x.style.transitionDelay = '1s'
+    x.style.opacity = '1';
+    x2.style.opacity = '0';
+    x3.style.opacity = '0';
+    btn1.style.marginTop = '0px';
+  }
+}
+
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<style>
+html {
+  overflow: hidden;
+  background-color: black;
+  background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font: 16px Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 0;
+  text-align: center;
+  margin: 0 auto;
+  );
+}
+
+html::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+
+#one {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: opacity 1s ease;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1
+}
+
+#three {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: opacity 1s ease;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 6px; 
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#button1 {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  z-index: 1;
+  transition-delay: 0.4s;
+}
+
+#button2 {
+  position: absolute;
+  left: 50%;
+  top: 76%;
+  transform: translate(-50%, -50%);
+  transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  z-index: 1;
+  transition-delay: 0.4s;
+}
+
+</style>
+</head>
+<body onload="document.body.style.opacity='1'">
+<div id="scan"></div>
+<style>
+body {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+#scan {
+	width: 100%;
+	height: 5px;
+	background-color: rgba(0, 255, 0, 1);
+  position: absolute;
+  box-shadow: 0px 0px 8px 10px rgba(0, 255, 0, 0.49);
+  animation-name: scan;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  z-index: 3;
+}
+
+#two {
+  opacity: 0;
+  transition: opacity 1s ease;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transition-delay: 1s;
+  transform: translate(-50%, -50%)
+}
+
+@keyframes scan {
+    0%   { top:   -1em }
+    100% { top: 600em }    
+}
+
+</style>
+  <div id="one">
+	<h1>welcome!</h1>
+	<p>we're all in hell anyways, so how about we enjoy the show?</p>
+<section>
+</div>
+<div id="button1">
+  <i class="arrow down"></i>
+	<button onclick="Function1(); Toggle1()" class="btn"></button>
+</div>
+<div id="button2">
+  <i class="arrow down"></i>
+	<button onclick="Toggle2()" class="easteregg"></button>
+</div>
+</section>
+</div>
+<div id="two">
+	<h1>about me:</h1>
+	<p>hi! i'm ivory, not to be confused with the content creator i share a name with, so this is my website! i am a trans girl (she/they) with a love for shark plushies (you can guess which), and i'm currently pre-hrt irl because of reasons beyond my control.</p>
+</div>
+<div id="three">
+	<h1>newton/brenda</h1>
+	<p>hi newton/brenda! coded this one just for you lol</p>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+padding: 20px 30px;
+width: 30px;
+height: 20px;
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+transform: translateY(0);
+display: flex;
+justify-content: center;
+white-space: nowrap;
+cursor: pointer;
+border-radius: 6px;
+margin-top: 10px;
+}
+
+.btn:hover{
+white-space: nowrap;
+overflow: hidden;
+padding: 20px 80px;
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+margin-top: 10px;
+}
+
+
+.easteregg{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-image: linear-gradient(rgb(208, 116, 162) 0px, rgb(208, 116, 162) 14.28%, rgb(248, 161, 205) 0px, rgb(248, 161, 205) 28.57%, rgb(217, 198, 234) 0px, rgb(217, 198, 234) 42.85%, white 0px, white 57.14%, rgb(217, 198, 234) 0px, rgb(217, 198, 234) 71.42%, rgb(144, 200, 236) 0px, rgb(144, 200, 236) 85.71%, rgb(101, 131, 213) 0px);
+padding: 20px 30px;
+width: 30px;
+height: 20px;
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+transform: translateY(0);
+display: flex;
+justify-content: center;
+white-space: nowrap;
+cursor: pointer;
+border-radius: 6px;
+margin-top: 10px;
+}
+
+.easteregg:hover{
+white-space: nowrap;
+overflow: hidden;
+padding: 20px 80px;
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+margin-top: 10px;
+}
+
+
+</style>
+
+</body>
+</html>
