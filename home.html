@@ -1,7 +1,5 @@
 <html>
 <head>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
 
 function Function1() {
@@ -38,9 +36,9 @@ document.onkeydown = function(e){
     user_keys.push(e.keyCode)
 
     if (user_keys.toString().indexOf(konami) >= 0) {
-   		  x2.style.transitionDelay = '1s';
-				x.style.transitionDelay = '0s';
-			  x.style.opacity = '0';
+   		x2.style.transitionDelay = '1s';
+		x.style.transitionDelay = '0s';
+		x.style.opacity = '0';
     		x2.style.opacity = '0';
     		x3.style.opacity = '1';
     }
@@ -201,8 +199,7 @@ body {
 </div>
 
 <div id="three">
-		<h1>you found a secret!</div>
-		<p>return by clicking the trans flag button!</p>
+	<h1>you found a secret! return using the flag button.</div>
 </div>
 
 <style>
