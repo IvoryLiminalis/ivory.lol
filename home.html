@@ -127,20 +127,12 @@ function Function1() {
 function Toggle1() {
   var x = document.getElementById("one");
   var x2 = document.getElementById("two");
-  if (x.style.opacity === "0") {
+  if (x.style.opacity === "1") {
+    x.style.opacity = "0";
     x2.style.opacity = "1";
   } else {
     x2.style.opacity = "0";
-  }
-}
-
-function Toggle2() {
-  var x = document.getElementById("one");
-  var x2 = document.getElementById("two");
-  if (x2.style.opacity === "1") {
-    x.style.opacity = "0";
-  } else {
-    x2.style.opacity = "0";
+    x.style.opacity = "1";
   }
 }
 </script>
