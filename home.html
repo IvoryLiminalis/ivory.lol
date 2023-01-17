@@ -29,8 +29,8 @@ function Toggle1() {
 function Toggle2() {
   const x = document.getElementById('one')
   const x2 = document.getElementById('three')
-  const x3 = document.getElementById('three')
-  const btn1 = document.getElementById('easteregg')
+  const x3 = document.getElementById('two')
+  const btn1 = document.getElementByClassName('easteregg')
   if (x.style.opacity === '1') {
     x2.style.transitionDelay = '1s'
     x.style.transitionDelay = '0s'
@@ -41,7 +41,7 @@ function Toggle2() {
     x2.style.transitionDelay = '0s'
     x.style.transitionDelay = '1s'
     x.style.opacity = '1';
-    x2.style.opacity = '0';
+    x2.style.opacity = '1';
     x3.style.opacity = '0';
     btn1.style.marginTop = '0px';
   }
