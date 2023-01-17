@@ -27,15 +27,16 @@ function Toggle1() {
   }
 }
 
+function KonaCommand() {
 const x = document.getElementById('one')
 const x2 = document.getElementById('two')
 const x3 = document.getElementById('three')
 var user_keys = [],
-    konami = '38,38,40,40,37,39,37,39,66,65';
+    konacommand = '38,38,40,40,37,39,37,39,66,65';
 document.onkeydown = function(e){
     user_keys.push(e.keyCode)
 
-    if (user_keys.toString().indexOf(konami) >= 0) {
+    if (user_keys.toString().indexOf(konacommand) >= 0) {
    		x2.style.transitionDelay = '1s';
 		x.style.transitionDelay = '0s';
 		x.style.opacity = '0';
