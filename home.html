@@ -23,6 +23,24 @@ function Toggle1() {
   }
 }
 
+function Toggle2() {
+  const x = document.getElementById('one')
+  const x2 = document.getElementById('three')
+  const btn1 = document.getElementById('easteregg')
+  if (x.style.opacity === '1') {
+    x2.style.transitionDelay = '1s'
+    x.style.transitionDelay = '0s'
+    x.style.opacity = '0';
+    x2.style.opacity = '1';
+  } else {
+    x2.style.transitionDelay = '0s'
+    x.style.transitionDelay = '1s'
+    x.style.opacity = '1';
+    x2.style.opacity = '0';
+    btn1.style.marginTop = '0px';
+  }
+}
+
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -149,11 +167,19 @@ body {
   <i class="arrow down"></i>
 	<button onclick="Function1(); Toggle1()" class="btn"></button>
 </div>
+<div id="button2">
+  <i class="arrow down"></i>
+	<button onclick="Toggle2()" class="btn"></button>
+</div>
 </section>
 </div>
 <div id="two">
 	<h1>about me:</h1>
 	<p>hi! i'm ivory, not to be confused with the content creator i share a name with, so this is my website! i am a trans girl (she/they) with a love for shark plushies (you can guess which), and i'm currently pre-hrt irl because of reasons beyond my control.</p>
+</div>
+<div id="three">
+	<h1>newton/brenda</h1>
+	<p>hi newton/brenda! coded this one just for you lol</p>
 </div>
 
 <style>
@@ -189,6 +215,34 @@ margin-top: 10px;
 }
 
 
+.easteregg{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background: linear-gradient(#d074a2 0 14.28%, #f8a1cd 0 28.57%, #d9c6ea 0 42.85%, white 0 57.14%, #d9c6ea 0 71.42%, #90c8ec 0 85.71%, #6583d5 0);
+padding: 20px 30px;
+width: 30px;
+height: 20px;
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+transform: translateY(0);
+display: flex;
+justify-content: center;
+white-space: nowrap;
+cursor: pointer;
+border-radius: 6px;
+margin-top: 10px;
+}
+
+.easteregg:hover{
+white-space: nowrap;
+overflow: hidden;
+padding: 20px 80px;
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+margin-top: 10px;
+}
 
 
 </style>
