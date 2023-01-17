@@ -89,7 +89,17 @@ html::after {
   -webkit-transform: rotate(45deg);
 }
 
-#button1arrow {
+#button1 {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  z-index: 1;
+  transition-delay: 0.4s;
+}
+
+#arrow1 {
   position: absolute;
   left: 50%;
   top: 62%;
@@ -145,7 +155,7 @@ body {
 	<p>we're all in hell anyways, so how about we enjoy the show?</p>
 <section>
 </div>
-<div id="arrow">
+<div id="arrow1">
   <i class="arrow down"></i>
 </div>
 <div id="button1">
