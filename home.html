@@ -110,7 +110,7 @@ body {
 <section>
 </div>
 <div id="button1">
-    <button onclick="Function1(); Toggle1()" class="btn"></button>
+    <button onclick="Function1(); Toggle1(); Toggle2()" class="btn"></button>
 </div>
 </section>
 </div>
@@ -131,10 +131,16 @@ function Toggle1() {
     x2.style.opacity = "1";
   } else {
     x2.style.opacity = "0";
-    if (x.style.opacity === "0") {
+  }
+}
+
+function Toggle2() {
+  var x = document.getElementById("one");
+  var x2 = document.getElementById("two");
+  if (x.style.opacity === "0") {
     x.style.opacity = "1";
   } else {
-    x.style.opacity = "0";
+    x2.style.opacity = "0";
   }
 }
 </script>
