@@ -1,6 +1,9 @@
 <html>
 <head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
+
 function Function1() {
   document.getElementById('button1').style.marginTop = '20px';
 }
@@ -26,45 +29,22 @@ function Toggle1() {
   }
 }
 
-const keySequence = [];
 const x = document.getElementById('one')
 const x2 = document.getElementById('two')
 const x3 = document.getElementById('three')
-let konamiString = '';
-const konamiCode = [
-    'ArrowUp',
-    'ArrowUp',
-    'ArrowDown',
-    'ArrowDown',
-    'ArrowLeft',
-    'ArrowRight',
-    'ArrowLeft',
-    'ArrowRight',
-    'b',
-    'a'
-];
+var user_keys = [],
+    konami = '38,38,40,40,37,39,37,39,66,65';
+document.onkeydown = function(e){
+    user_keys.push(e.keyCode)
 
-document.addEventListener('keyup', function(e) {
-    keySequence.push(e.key);
-    keySequence.splice(
-        -konamiCode.length - 1, 
-        keySequence.length - konamiCode.length
-    );
-    konamiString = konamiCode.join('');
-
-    if (keySequence.join('').includes(konamiString)) {
-    x2.style.transitionDelay = '1s';
-    x.style.transitionDelay = '0s';
-    x.style.opacity = '0';
-    x3.style.opacity = '1';
-  } else {
-    x2.style.transitionDelay = '0s';
-    x.style.transitionDelay = '1s';
-    x.style.opacity = '1';
-    x2.style.opacity = '0';
-    x3.style.opacity = '0';
+    if (user_keys.toString().indexOf(konami) >= 0) {
+   		  x2.style.transitionDelay = '1s';
+				x.style.transitionDelay = '0s';
+			  x.style.opacity = '0';
+    		x2.style.opacity = '0';
+    		x3.style.opacity = '1';
     }
-});
+}
 
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -221,8 +201,8 @@ body {
 </div>
 
 <div id="three">
-<h1>you found a secret!</div>
-<p>return by clicking the trans flag button!</p>
+		<h1>you found a secret!</div>
+		<p>return by clicking the trans flag button!</p>
 </div>
 
 <style>
