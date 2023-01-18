@@ -11,6 +11,8 @@ function Toggle1() {
   const x = document.getElementById('one')
   const x2 = document.getElementById('two')
   const x3 = document.getElementById('three')
+	const x4 = document.getElementById('container-wrap-wrap')
+	const x5 = document.getElementById('container-wrap')
   const btn1 = document.getElementById('button1')
   if (x.style.opacity === '1') {
     x2.style.transitionDelay = '1s';
@@ -18,12 +20,16 @@ function Toggle1() {
     x.style.opacity = '0';
     x2.style.opacity = '1';
     x3.style.opacity = '0';
+		x4.style.opacity = '0';
+		x5.style.opacity = '1';
   } else {
     x2.style.transitionDelay = '0s';
     x.style.transitionDelay = '1s';
     x.style.opacity = '1';
     x2.style.opacity = '0';
-    x3.style.opacity = '0';
+    x3.style.opacity = '0';'
+		x4.style.opacity = '1';
+		x5.style.opacity = '0';
     btn1.style.marginTop = '0px';
   }
 }
@@ -164,6 +170,17 @@ body {
   overflow: hidden;
   background-color: black;
   background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
+	transition: opacity 3s ease;
+	opacity: 1;
+}
+
+#container-wrap {
+	height: 100%;
+  overflow: hidden;
+  background-color: black;
+  background: radial-gradient(rgba(255, 255, 240, 1), black 120%);
+	transition: opacity 3s ease;
+	opacity: 0;
 }
 
 
@@ -183,7 +200,9 @@ body {
 }
 
 </style>
-	<div id="container-wrap-wrap"></div>
+	<div id="container-wrap-wrap">
+		<div id="container-wrap"></div>
+	</div>
   <div id="one">
 	<h1>welcome!</h1>
 	<p>we're all in hell anyways, so how about we enjoy the show?</p>
