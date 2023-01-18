@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>ivory.lol</title>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script type="text/javascript" src="../lib/konami-code.min.js"></script>
 <script type="text/javascript">
   function onKonamiCode() {
@@ -61,9 +61,25 @@ function Toggle1() {
   }
 }
 
+$(function(){
+    
+    // optional: don't cache ajax to force the content to be fresh
+    $.ajaxSetup ({
+        cache: false
+    });
+    
+    // specify the server/url you want to load data from
+    var url = "https://ivory.lol";
+    
+    // on click, load the data dynamically into the #result div
+    $("#loadbasic").(function(){
+        $("body").html(spinner).load(url);
+    });
+
+});
+
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <style>
 
 #scan2 {
