@@ -34,13 +34,12 @@ function Toggle1() {
 <style>
 html {
   overflow: hidden;
-  background-color: black;
-  background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+	height: 100%;
   color: white;
   font: 16px Inconsolata, monospace;
   text-shadow: 0 0 5px #C8C8C8;
@@ -129,6 +128,10 @@ html::after {
 body {
   opacity: 0;
   transition: opacity 3s ease;
+	height: 100%;
+  overflow: hidden;
+  background-color: black;
+  background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
 }
 
 #scan {
@@ -155,7 +158,15 @@ body {
   transition-delay: 1s;
   transform: translate(-50%, -50%)
 }
-	
+
+#container-wrap-wrap {
+	height: 100%;
+  overflow: hidden;
+  background-color: black;
+  background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
+}
+
+
 #three {
   position: absolute;
   left: 50%;
@@ -172,6 +183,7 @@ body {
 }
 
 </style>
+	<div id="container-wrap-wrap"></div>
   <div id="one">
 	<h1>welcome!</h1>
 	<p>we're all in hell anyways, so how about we enjoy the show?</p>
