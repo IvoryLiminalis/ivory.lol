@@ -40,7 +40,7 @@ function Toggle1() {
 	const x4 = document.getElementById('container-wrap-wrap');
 	const x5 = document.getElementById('container-wrap');
   const btn1 = document.getElementById('button1');
-  if (x.style.opacity === '1') {
+  if (x.style.opacity === '1' || x2.style.opacity === '1') {
     x3.style.transitionDelay = '1s';
 		x2.style.transitionDelay = '1s';
     x.style.transitionDelay = '0s';
@@ -59,6 +59,42 @@ function Toggle1() {
 		x4.style.opacity = '1';
 		x5.style.opacity = '0';
     btn1.style.marginTop = '0px';
+  }
+}
+
+function Toggle2() {
+  const x = document.getElementById('one');
+  const x2 = document.getElementById('two');
+  const x3 = document.getElementById('three');
+	const x4 = document.getElementById('container-wrap-wrap');
+	const x5 = document.getElementById('container-wrap');
+	const x6 = document.getElementById('four')
+	const x7 = document.getElementById('secret2')
+	const btn1 = document.getElementById('button1');
+  if (x.style.opacity === '1' || x2.style.opacity === '1') {
+    x3.style.transitionDelay = '1s';
+		x2.style.transitionDelay = '1s';
+    x.style.transitionDelay = '0s';
+    x.style.opacity = '0';
+    x2.style.opacity = '0';
+    x3.style.opacity = '0';
+		x4.style.opacity = '0';
+		x5.style.opacity = '1';
+		x6.style.opacity = '1';
+		x7.style.opacity = '0';
+		btn1.style.marginTop = '40px';
+  } else {
+		x3.style.transitionDelay = '0s';
+		x2.style.transitionDelay = '0s';
+    x.style.transitionDelay = '1s';
+    x.style.opacity = '1';
+    x2.style.opacity = '0';
+    x3.style.opacity = '0';
+		x4.style.opacity = '1';
+		x5.style.opacity = '0';
+		x6.style.opacity = '0';
+		x7.style.opacity = '1';
+		btn1.style.marginTop = '0px';
   }
 }
 
@@ -170,19 +206,16 @@ a:link {
   text-decoration: none;
 }
 
-/* visited link */
 a:visited {
   color: white;
   text-decoration: none;
 }
 
-/* mouse over link */
 a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* selected link */
 a:active {
   color: white;
   text-decoration: none;
@@ -278,7 +311,7 @@ body {
 
 <div id="three">
 	<h1>you found a secret!</h1>
-	<p>silly me, forgot to add <a id="secret2">a reference to someone.</a> you can go back using the flag button!</p>
+	<p>silly me, forgot to add <a onclick="Toggle2()" id="secret2">a reference to someone.</a> you can go back using the flag button!</p>
 </div>
 
 <div id="four">
