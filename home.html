@@ -70,8 +70,9 @@ function Toggle2() {
 	const x7 = document.getElementById('secret2')
 	const btn1 = document.getElementById('button1');
   if (x.style.opacity === '1' || x2.style.opacity === '1' || x3.style.opacity === '1') {
-		x3.style.transitionDelay = '1s';
-		x2.style.transitionDelay = '1s';
+		x3.style.transitionDelay = '0s';
+		x2.style.transitionDelay = '0s';
+		x7.style.transitionDelay = '0s';
     x.style.transitionDelay = '0s';
 		x6.style.transitionDelay = '1s';
     x.style.opacity = '0';
@@ -81,11 +82,12 @@ function Toggle2() {
 		x5.style.opacity = '1';
 		x6.style.opacity = '1';
 		x7.style.opacity = '0';
-		btn1.style.marginTop = '40px';
+		btn1.style.marginTop = '80px';
   } else {
-		x3.style.transitionDelay = '0s';
-		x2.style.transitionDelay = '0s';
-    x.style.transitionDelay = '1s';
+		x3.style.transitionDelay = '1s';
+		x2.style.transitionDelay = '1s';
+		x7.style.transitionDelay = '1s';
+    x.style.transitionDelay = '0s';
 		x6.style.transitionDelay = '0s';
     x.style.opacity = '1';
     x2.style.opacity = '0';
