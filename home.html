@@ -1,75 +1,90 @@
-<html>
-<head>
-<title>ivory.lol</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<script type="text/javascript" src="../lib/konami-code.min.js"></script>
-<script type="text/javascript">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+
+  <title>ivory.lol</title>
+  <script src=
+  'https://d33wubrfki0l68.cloudfront.net/js/f4e5b8d673bd546ef725f17673bf60b1295454cc/lib/konami-code.min.js'
+  type='text/javascript'>
+</script>
+  <script type="text/javascript">
+//<![CDATA[
   function onKonamiCode() {
-		document.getElementById('button1').style.marginTop = '20px';
-		document.getElementById('three').style.opacity = '1';
-		document.getElementById('two').style.opacity = '0';
-		document.getElementById('one').style.opacity = '0';
-		document.getElementById('three').style.transitionDelay = '1s';
-		document.getElementById('two').style.transitionDelay = '0s';
-		document.getElementById('one').style.transitionDelay = '0s';
-	  document.getElementById('container-wrap').style.opacity = '1';
-	  document.getElementById('container-wrap-wrap').style.opacity = '0';
+                document.getElementById('button1').style.marginTop = '20px';
+                document.getElementById('three').style.opacity = '1';
+                document.getElementById('two').style.opacity = '0';
+                document.getElementById('one').style.opacity = '0';
+                document.getElementById('three').style.transitionDelay = '1s';
+                document.getElementById('two').style.transitionDelay = '0s';
+                document.getElementById('one').style.transitionDelay = '0s';
+          document.getElementById('container-wrap').style.opacity = '1';
+          document.getElementById('container-wrap-wrap').style.opacity = '0';
   }
   function onKonamiCodeGesture(event) {
       console.log(event.detail.name);
   }
   document.addEventListener('konamiCode', onKonamiCode);
   document.addEventListener('konamiCodeGesture', onKonamiCodeGesture);
-</script>
+  //]]>
+  </script>
+  <script type="text/javascript">
+//<![CDATA[
 
-<script>
+  function loadedstyling() {
+        document.body.style.opacity = '1';
+  }
 
-function loadedstyling() {
-	document.body.style.opacity = '1';
-}
-
-function Function1() {
+  function Function1() {
   document.getElementById('button1').style.marginTop = '20px';
-}
+  }
 
-function Toggle1() {
+  function Toggle1() {
   const x = document.getElementById('one');
   const x2 = document.getElementById('two');
   const x3 = document.getElementById('three');
-	const x4 = document.getElementById('container-wrap-wrap');
-	const x5 = document.getElementById('container-wrap');
+        const x4 = document.getElementById('container-wrap-wrap');
+        const x5 = document.getElementById('container-wrap');
   const btn1 = document.getElementById('button1');
   if (x.style.opacity === '1') {
     x3.style.transitionDelay = '1s';
-		x2.style.transitionDelay = '1s';
+                x2.style.transitionDelay = '1s';
     x.style.transitionDelay = '0s';
     x.style.opacity = '0';
     x2.style.opacity = '1';
     x3.style.opacity = '0';
-		x4.style.opacity = '0';
-		x5.style.opacity = '1';
+                x4.style.opacity = '0';
+                x5.style.opacity = '1';
   } else {
-		x3.style.transitionDelay = '0s';
-		x2.style.transitionDelay = '0s';
+                x3.style.transitionDelay = '0s';
+                x2.style.transitionDelay = '0s';
     x.style.transitionDelay = '1s';
     x.style.opacity = '1';
     x2.style.opacity = '0';
     x3.style.opacity = '0';
-		x4.style.opacity = '1';
-		x5.style.opacity = '0';
+                x4.style.opacity = '1';
+                x5.style.opacity = '0';
     btn1.style.marginTop = '0px';
   }
-}
+  }
 
+  //]]>
+  </script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" type=
+  "text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" type=
+  "text/javascript">
 </script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<style>
+  <style type="text/css">
+/*<![CDATA[*/
 
-#scan {
-	width: 100%;
-	height: 5px;
-	background-color: rgba(0, 255, 0, 1);
+  #scan {
+        width: 100%;
+        height: 5px;
+        background-color: rgba(0, 255, 0, 1);
   position: absolute;
   box-shadow: 0px 0px 8px 10px rgba(0, 255, 0, 0.49);
   animation-name: scan;
@@ -78,22 +93,22 @@ function Toggle1() {
   animation-iteration-count: infinite;
   overflow: hidden;
   z-index: 3;
-	opacity: 1;
-}
+        opacity: 1;
+  }
 
-@keyframes scan {
+  @keyframes scan {
     0%   { top:   -100em }
     100% { top: 500em }    
-}
+  }
 
-html {
+  html {
   overflow: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-	height: 100%;
+        height: 100%;
   color: white;
   font: 16px Inconsolata, monospace;
   text-shadow: 0 0 5px #C8C8C8;
@@ -103,9 +118,9 @@ html {
   text-align: center;
   margin: 0 auto;
   );
-}
+  }
 
-html::after {
+  html::after {
   content: " ";
   display: block;
   position: absolute;
@@ -118,14 +133,14 @@ html::after {
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
   overflow: hidden;
-}
+  }
 
-::selection {
+  ::selection {
   background: #0080FF;
   text-shadow: none;
-}
+  }
 
-#one {
+  #one {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -133,28 +148,28 @@ html::after {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 1
-}
+  }
 
-.arrow {
+  .arrow {
   border: solid white;
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 6px; 
-}
+  }
 
-.arrow::hover, .down::hover {
+  .arrow::hover, .down::hover {
   padding: 12px;
-	border: solid white;
-	transition: border-width 3s cubic-bezier(.47,1.64,.41,.8);
+        border: solid white;
+        transition: border-width 3s cubic-bezier(.47,1.64,.41,.8);
   border-width: 0 8px 8px 0;
-}
+  }
 
-.down {
+  .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-}
+  }
 
-#button1 {
+  #button1 {
   position: absolute;
   left: 50%;
   top: 62%;
@@ -162,9 +177,9 @@ html::after {
   transition: 3s cubic-bezier(.47,1.64,.41,.8);
   z-index: 1;
   transition-delay: 0.4s;
-}
+  }
 
-#button2 {
+  #button2 {
   position: absolute;
   left: 50%;
   top: 76%;
@@ -172,25 +187,24 @@ html::after {
   transition: 3s cubic-bezier(.47,1.64,.41,.8);
   z-index: 1;
   transition-delay: 0.4s;
-}
+  }
 
-</style>
-</head>
-<body onload="loadedstyling()">
-<div id="scan"></div>
-<style>
-body {
+  /*]]>*/
+  </style>
+  <style type="text/css">
+/*<![CDATA[*/
+  body {
   opacity: 0;
   transition: opacity 3s ease;
-	height: 100%;
+        height: 100%;
   overflow: hidden;
   background-color: black;
   background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
-}
+  }
 
 
 
-#two {
+  #two {
   opacity: 0;
   transition: opacity 1s ease;
   position: absolute;
@@ -199,28 +213,28 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transition-delay: 1s;
   transform: translate(-50%, -50%)
-}
+  }
 
-#container-wrap-wrap {
-	height: 100%;
+  #container-wrap-wrap {
+        height: 100%;
   overflow: hidden;
   background-color: black;
   background: radial-gradient(rgba(0, 150, 0, 1), black 120%);
-	transition: opacity 3s ease;
-	opacity: 1;
-}
+        transition: opacity 3s ease;
+        opacity: 1;
+  }
 
-#container-wrap {
-	height: 100%;
+  #container-wrap {
+        height: 100%;
   overflow: hidden;
   background-color: black;
   background: radial-gradient(rgba(255, 255, 255, 1), black 120%);
-	transition: opacity 3s ease;
-	opacity: 0;
-}
+        transition: opacity 3s ease;
+        opacity: 0;
+  }
 
 
-#three {
+  #three {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -228,36 +242,79 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0
-}
+  }
 
-</style>
-	<div id="scan"></div>
-	<div id="container-wrap-wrap">
-		<div id="container-wrap"></div>
-	</div>
+  /*]]>*/
+  </style>
+  <style type="text/css">
+/*<![CDATA[*/
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+  .btn{
+
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+  padding: 20px 30px;
+  width: 30px;
+  height: 20px;
+  transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: translateY(0);
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 10px;
+  }
+
+  .btn:hover{
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 20px 80px;
+  transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+  margin-top: 10px;
+  }
+
+  /*]]>*/
+  </style>
+</head>
+
+<body onload="loadedstyling()">
+  <div id="scan"></div>
+
+  <div id="scan"></div>
+
+  <div id="container-wrap-wrap">
+    <div id="container-wrap"></div>
+  </div>
+
   <div id="one">
-	<h1>welcome!</h1>
-	<p>we're all in hell anyways, so how about we enjoy the show?</p>
-<section>
-</div>
-<div id="button1">
-  <i class="arrow down"></i>
-	<button onclick="Function1(); Toggle1()" class="btn"></button>
-</div>
-</div>
+    <h1>welcome!</h1>
 
-</div>
-<div id="two">
-	<h1>about me:</h1>
-	<p>hi! i'm ivory, not to be confused with the content creator i share a name with, so this is my website! i am a trans girl (she/they) with a love for shark plushies (you can guess which), and i'm currently pre-hrt irl because of reasons beyond my control.</p>
-</div>
+    <p>we're all in hell anyways, so how about we enjoy the show?</p>
+  </div>
 
-<div id="three">
-	<h1>you found a secret!</h1>
-	<p>silly me, forgot to add a reference to someone. you can go back using the flag button!</p>
-</div>
-</section>
-<!--                               _                
+  <div id="button1"></div>
+
+  <div id="two">
+    <h1>about me:</h1>
+
+    <p>hi! i'm ivory, not to be confused with the content creator i share a name with, so
+    this is my website! i am a trans girl (she/they) with a love for shark plushies (you
+    can guess which), and i'm currently pre-hrt irl because of reasons beyond my
+    control.</p>
+  </div>
+
+  <div id="three">
+    <h1>you found a secret!</h1>
+
+    <p>silly me, forgot to add a reference to someone. you can go back using the flag
+    button!</p>
+  </div><!--                               _                
  __    _ _  ______    ________ ___| |____ _   _   _ 
  \ \  / | |/ |  _ \  |.  ___  |_  |____  | | | | | |
 (_| | | | ' /| | | |  | |   | | | |   / /| | | | | |
@@ -266,40 +323,5 @@ body {
  /_/                                                
 
 -->
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
-
-.btn{
-
-font-family: Roboto, sans-serif;
-font-weight: 0;
-font-size: 14px;
-color: #fff;
-background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
-padding: 20px 30px;
-width: 30px;
-height: 20px;
-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-transform: translateY(0);
-display: flex;
-justify-content: center;
-white-space: nowrap;
-cursor: pointer;
-border-radius: 6px;
-margin-top: 10px;
-}
-
-.btn:hover{
-white-space: nowrap;
-overflow: hidden;
-padding: 20px 80px;
-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
-margin-top: 10px;
-}
-
-</style>
-
 </body>
 </html>
