@@ -66,26 +66,6 @@ function Toggle1() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <style>
 
-#scan {
-	width: 100%;
-	height: 5px;
-	background-color: rgba(0, 255, 0, 1);
-  position: absolute;
-  box-shadow: 0px 0px 8px 10px rgba(0, 255, 0, 0.49);
-  animation-name: scan;
-  animation-duration: 7s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  overflow: hidden;
-  z-index: 3;
-	opacity: 1;
-}
-
-@keyframes scan {
-    0%   { top:   -100em }
-    100% { top: 500em }    
-}
-
 html {
   overflow: hidden;
   position: absolute;
@@ -260,7 +240,6 @@ body {
 }
 
 </style>
-	<div id="scan"></div>
 	<div id="container-wrap-wrap">
 		<div id="container-wrap"></div>
 	</div>
