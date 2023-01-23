@@ -61,46 +61,6 @@ function Toggle1() {
   }
 }
 
-function Toggle2() {
-  const x = document.getElementById('one');
-  const x2 = document.getElementById('two');
-  const x3 = document.getElementById('three');
-	const x4 = document.getElementById('container-wrap-wrap');
-	const x5 = document.getElementById('container-wrap');
-	const x6 = document.getElementById('four')
-	const x7 = document.getElementById('secret2')
-	const btn1 = document.getElementById('button1');
-  if (x.style.opacity === '1' || x2.style.opacity === '1' || x3.style.opacity === '1') {
-		x3.style.transitionDelay = '0s';
-		x2.style.transitionDelay = '0s';
-		x7.style.transitionDelay = '0s';
-    x.style.transitionDelay = '0s';
-		x6.style.transitionDelay = '0.8s';
-    x.style.opacity = '0';
-    x2.style.opacity = '0';
-    x3.style.opacity = '0';
-		x4.style.opacity = '0';
-		x5.style.opacity = '1';
-		x6.style.opacity = '1';
-		x7.style.opacity = '0';
-		btn1.style.marginTop = '95px';
-  } else {
-		x3.style.transitionDelay = '1s';
-		x2.style.transitionDelay = '1s';
-		x7.style.transitionDelay = '1s';
-    x.style.transitionDelay = '0s';
-		x6.style.transitionDelay = '0s';
-    x.style.opacity = '1';
-    x2.style.opacity = '0';
-    x3.style.opacity = '0';
-		x4.style.opacity = '1';
-		x5.style.opacity = '0';
-		x6.style.opacity = '0';
-		x7.style.opacity = '1';
-		btn1.style.marginTop = '0px';
-  }
-}
-
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -297,17 +257,6 @@ body {
   opacity: 0
 }
 
-#four {
-  position: absolute;
-	z-index: -1;
-  left: 50%;
-  top: 50%;
-  transition: opacity 1s ease;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0
-}
-
 </style>
 	<div id="scan"></div>
 	<div id="container-wrap-wrap">
@@ -332,18 +281,7 @@ body {
 
 <div id="three">
 	<h1>you found a secret!</h1>
-	<p>silly me, forgot to add <a onclick="Toggle2()" id="secret2">a reference to someone.</a> you can go back using the flag button!</p>
-</div>
-
-<div id="four">
-	<h1>you found another secret! here's a reward!</h1>
-	<p>you truly are a good secret-finder! well, this page is dedicated to the following people:</p>
-	<p>Ray | "1000dumplings" | for being amazing and supportive!</p>
-	<p>Newton/Brenda J. Adams | we had some differences, but we're alright now!</p>
-	<p>"CrisPoggers" | cool person, idk what else to say.</p>
-	<p>"MilkBrr/Avery" | being a great friend!</p>
-	<p>"TweeterTweers" | we've had a few issues between eachother, but we're fairly cool now so it's okay i guess.</p>
-	<p>"YOU!" | thanks for visitng my website, i wish you and everyone else mentioned a great day &lt;3</p>
+	<p>silly me, forgot to add a reference to someone. you can go back using the flag button!</p>
 </div>
 </section>
 <!--                               _                
