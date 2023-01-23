@@ -58,17 +58,6 @@ function Toggle1() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <style>
 
-@media only screen and (max-device-width: 480px) {
-        #container-wrap-wrap {
-            background-image: url(/img/bg1.svg);
-            height: 93px;
-            position: relative;
-					  background-image: url(/img/bg1.svg);
-						background-size: cover;
-						background-repeat: no-repeat;
-        }
-}
-
 html {
   overflow: hidden;
   position: absolute;
@@ -213,7 +202,6 @@ body {
 
 #container-wrap-wrap {
   overflow: hidden;
-  background-color: black;
   background-image: url(/img/bg1.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -224,7 +212,6 @@ body {
 #container-wrap {
 	height: 100%;
   overflow: hidden;
-  background-color: black;
   background: radial-gradient(rgba(255, 255, 255, 1), black 120%);
 	transition: opacity 3s ease;
 	opacity: 0;
@@ -239,6 +226,17 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0
+}
+
+@media only screen and (max-device-width: 480px) {
+        #container-wrap-wrap {
+            background-image: url(/img/bg1.svg);
+            height: 93px;
+            position: relative;
+					  background-image: url(/img/bg1.svg);
+						background-size: cover;
+						background-repeat: no-repeat;
+        }
 }
 
 </style>
