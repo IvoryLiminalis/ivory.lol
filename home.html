@@ -74,7 +74,6 @@ html {
   z-index: 0;
   text-align: center;
   margin: 0 auto;
-  );
 }
 
 html::after {
@@ -85,11 +84,18 @@ html::after {
   left: 0;
   bottom: 0;
   right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
+  background: -o-linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), -o-linear-gradient(left, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
   overflow: hidden;
+}
+
+::-moz-selection {
+  background: #0080FF;
+  text-shadow: none;
 }
 
 ::selection {
@@ -101,13 +107,18 @@ html::after {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   opacity: 1
 }
 
 #secret2 {
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
 
@@ -121,12 +132,15 @@ html::after {
 .arrow::hover, .down::hover {
   padding: 12px;
 	border: solid white;
+	-webkit-transition: border-width 3s cubic-bezier(.47,1.64,.41,.8);
+	-o-transition: border-width 3s cubic-bezier(.47,1.64,.41,.8);
 	transition: border-width 3s cubic-bezier(.47,1.64,.41,.8);
   border-width: 0 8px 8px 0;
 }
 
 .down {
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
@@ -134,10 +148,16 @@ html::after {
   position: absolute;
   left: 50%;
   top: 62%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  -o-transition: 3s cubic-bezier(.47,1.64,.41,.8);
   transition: 3s cubic-bezier(.47,1.64,.41,.8);
   z-index: 1;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 a:link {
@@ -155,32 +175,35 @@ a:visited {
 a:hover {
   color: white;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 a:active {
   color: white;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 #button2 {
   position: absolute;
   left: 50%;
   top: 76%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  -o-transition: 3s cubic-bezier(.47,1.64,.41,.8);
   transition: 3s cubic-bezier(.47,1.64,.41,.8);
   z-index: 1;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
-</style>
-</head>
-<body onload="loadedstyling()">
-<div id="scan"></div>
-<style>
 body {
   opacity: 0;
+  -webkit-transition: opacity 3s ease;
+  -o-transition: opacity 3s ease;
   transition: opacity 3s ease;
 	height: 100%;
   overflow: hidden;
@@ -193,16 +216,21 @@ body {
 
 #two {
   opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%)
 }
 
 #container-wrap-wrap {
   overflow: hidden;
+	-webkit-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
 	transition: opacity 3s ease;
   background-image: url('/img/bg1.svg');
   background-position: top center;
@@ -215,7 +243,10 @@ body {
 #container-wrap {
 	height: 100%;
   overflow: hidden;
+  background: -o-radial-gradient(rgba(255, 255, 255, 1), black 120%);
   background: radial-gradient(rgba(255, 255, 255, 1), black 120%);
+	-webkit-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
 	transition: opacity 3s ease;
 	opacity: 0;
 }
@@ -225,13 +256,63 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   opacity: 0
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
+background: -o-linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+padding: 20px 30px;
+width: 30px;
+height: 20px;
+-webkit-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+-o-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+-webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+-webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+        transform: translateY(0);
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+white-space: nowrap;
+cursor: pointer;
+border-radius: 6px;
+margin-top: 10px;
+}
+
+.btn:hover{
+white-space: nowrap;
+overflow: hidden;
+padding: 20px 80px;
+-webkit-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+-o-transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+transition : 400ms cubic-bezier(.47,1.64,.41,.8);
+margin-top: 10px;
+}
+
 </style>
+</head>
+<body onload="loadedstyling()">
+<div id="scan"></div>
 	<div id="container-wrap-wrap">
 		<div id="container-wrap"></div>
 	</div>
