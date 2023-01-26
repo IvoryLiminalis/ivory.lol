@@ -292,20 +292,21 @@ margin-top: 18px;
   -ms-flex-pack: center;
 	justify-content: center;
 	white-space: nowrap;
-margin-top: 10px;
+	margin-top: 10px;
 }
 
-#redact1:hover {
+#redact1::hover {
 	background-color: transparent;
 	transition: 1s ease;
   text-shadow: 0 0 5px #C8C8C8;
-	position: absolute;
-	z-index: 2;
-  left: 50%;
-  top: 68%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%)
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+  -ms-flex-pack: center;
+	justify-content: center;
+	white-space: nowrap;
+	margin-top: 10px;
 }
 
 </style>
