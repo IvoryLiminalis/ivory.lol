@@ -17,7 +17,7 @@ function Function1() {
 }
 
 function Toggle1() {
-  const x = document.getElementById('one');
+  const x = document.getElementById('one-wrap');
   const x2 = document.getElementById('two');
   const btn1 = document.getElementById('button1');
   if (x.style.opacity === '1') {
@@ -28,8 +28,8 @@ function Toggle1() {
     x.style.zIndex = '0';
     x2.style.zIndex = '1';
 		
+		
   } else {
-		x3.style.transitionDelay = '0s';
 		x2.style.transitionDelay = '0s';
     x.style.transitionDelay = '1s';
     x.style.opacity = '1';
@@ -320,11 +320,12 @@ margin-top: 18px;
 	<div id="container-wrap-wrap">
 		<div id="container-wrap"></div>
 	</div>
-  <div id="one">
-	<h1>welcome!</h1>
-	<p>we're all in hell anyways, so how about we enjoy the show?</p>
-	<p id="redact1">[DATA EXPUNGED]</p>
-<section>
+<section id="one-wrap">
+	<div id="one">
+		<h1>welcome!</h1>
+		<p>we're all in hell anyways, so how about we enjoy the show?</p>
+		<p id="redact1">[DATA EXPUNGED]</p>
+</section>
 </div>
 <div id="button1">
   <i class="arrow down"></i>
@@ -337,7 +338,6 @@ margin-top: 18px;
 	<h1>about me:</h1>
 	<p>hi! i'm ivory, not to be confused with the content creator i share a name with, so this is my website! i am a trans girl (she/they) with a love for shark plushies (you can guess which), and i'm currently pre-hrt because of reasons beyond my control.</p>
 </div>
-</section>
 <!--                               _                
  __    _ _  ______    ________ ___| |____ _   _   _ 
  \ \  / | |/ |  _ \  |.  ___  |_  |____  | | | | | |
