@@ -16,35 +16,6 @@ function Function1() {
   document.getElementById('button1').style.marginTop = '30px';
 }
 
-function Toggle1() {
-  const x = document.getElementById('one-wrap');
-  const x2 = document.getElementById('two');
-	const x3 = document.getElementById('three');
-  const btn1 = document.getElementById('button1');
-  if (x.style.opacity === '1' || x3.style.opacity === '1' && x2.style.opacity === '0') {
-    x.style.transitionDelay = '0s';
-    x2.style.transitionDelay = '1s';
-    x3.style.transitionDelay = '0s';
-    x.style.opacity = '0';
-    x2.style.opacity = '1';
-		x3.style.opacity = '0';
-    x.style.zIndex = '0';
-    x2.style.zIndex = '1';
-    x3.style.zIndex = '0';
-  } else {
-    x.style.transitionDelay = '1s';
-    x2.style.transitionDelay = '0s';
-    x3.style.transitionDelay = '0s';
-    x.style.opacity = '1';
-    x2.style.opacity = '0';
-		x3.style.opacity = '0';
-    x.style.zIndex = '1';
-    x2.style.zIndex = '0';
-    x3.style.zIndex = '0';
-		btn1.style.marginTop = '4px'
-  }
-}
-
 function ShowPage1() {
   const x = document.getElementById('one-wrap');
   const x2 = document.getElementById('two');
@@ -449,8 +420,8 @@ margin-top: 2px;
 </div>
 
 <div class="nav">
-  <a onclick="ShowPage1();">welcome!</a>
-  <a onclick="ShowPage2()">about me!</a>
+  <a onclick="ShowPage1()">welcome!</a>
+  <a onclick="ShowPage2(); Function1()">about me!</a>
 </div>
 
 </div>
