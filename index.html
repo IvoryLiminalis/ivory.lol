@@ -16,28 +16,37 @@ function Function1() {
   document.getElementById('button1').style.marginTop = '30px';
 }
 
-function Toggle1() {
+function ShowPage1() {
   const x = document.getElementById('one-wrap');
   const x2 = document.getElementById('two');
+	const x3 = document.getElementById('three');
   const btn1 = document.getElementById('button1');
-  if (x.style.opacity === '1') {
-    x.style.transitionDelay = '0s';
-    x2.style.transitionDelay = '1s';
-    x.style.opacity = '0';
-    x2.style.opacity = '1';
-    x.style.zIndex = '0';
-    x2.style.zIndex = '1';
-		
-		
-  } else {
-		x2.style.transitionDelay = '0s';
     x.style.transitionDelay = '1s';
+    x2.style.transitionDelay = '0s';
+    x3.style.transitionDelay = '0s';
     x.style.opacity = '1';
     x2.style.opacity = '0';
-    x2.style.zIndex = '0';
+		x3.style.opacity = '0';
     x.style.zIndex = '1';
-    btn1.style.marginTop = '0px';
-  }
+    x2.style.zIndex = '0';
+    x3.style.zIndex = '0';
+}
+
+
+function ShowPage2() {
+  const x = document.getElementById('one-wrap');
+  const x2 = document.getElementById('two');
+	const x3 = document.getElementById('three');
+  const btn1 = document.getElementById('button1');
+    x.style.transitionDelay = '0s';
+    x2.style.transitionDelay = '0s';
+    x3.style.transitionDelay = '0s';
+    x.style.opacity = '0';
+    x2.style.opacity = '0';
+		x3.style.opacity = '1';
+    x.style.zIndex = '0';
+    x2.style.zIndex = '0';
+    x3.style.zIndex = '1';
 }
 
 </script>
@@ -77,6 +86,34 @@ html::after {
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
   overflow: hidden;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+	transition: 1s;
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	transition: 1s;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+	transition: 1s;
+}
+
+.nav a.active {
+  background-color: #04AA6D;
+  color: white;
+	transition: 1s;
 }
 
 ::-moz-selection {
@@ -357,30 +394,31 @@ margin-top: 2px;
 	<div id="one">
 		<h1>welcome!</h1>
 		<p>we're all in hell anyways, so how about we enjoy the show?</p>
-		<span>click the button :3</span>
+		<span>click the trans flag :3</span>
 </section>
 </div>
 <div id="button1">
   <i class="arrow down"></i>
-	<button onclick="Function1(); Toggle1()" class="btn"></button>
+	<button onclick="Toggle1()" class="btn"></button>
 </div>
+</div>
+
+<div class="topnav">
+  <a onclick="Function1(); ShowPage1();">welcome!</a>
+  <a onclick="ShowPage2(); Function1();">about me!</a>
 </div>
 
 </div>
 <div id="two">
+	<h1>haiiii! :3</h1>
+	<p>if you (the person looking at this site) are offended by me or anyone else being trans, kindly get out and don't come back.</p>
+</div>
+
+<div id="three">
 	<h1>about me:</h1>
 	<p>haiiiii!~ i'm ivory, not to be confused with the content creator i share a name with, so this is my website! i am a trans girl (she/they) with a love for shark plushies (you can guess which), and i'm currently pre-hrt because of reasons beyond my control.</p>
 	<span>fun fact: i'm also a catgirl :3</span>
 </div>
-<!--                               _                
- __    _ _  ______    ________ ___| |____ _   _   _ 
- \ \  / | |/ |  _ \  |.  ___  |_  |____  | | | | | |
-(_| | | | ' /| | | |  | |   | | | |   / /| | | | | |
- _| | | | . \| |_| |  | |___| | | |  / / | |/ /_/ / 
-(_| | |_|_|\_|____/   |_______| |_| /_/  |_______/  
- /_/                                                
-
--->
 
 </body>
 </html>
