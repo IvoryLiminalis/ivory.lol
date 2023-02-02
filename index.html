@@ -90,12 +90,24 @@ html::after {
   overflow: hidden;
 }
 
+.nav-wrap {
+  overflow: hidden;
+	background-color: #323232;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	transition: 1s;
+}
+
 .nav {
   overflow: hidden;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
 	background: -o-linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
 	background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
 	transition: 1s;
+	margin-left: 200px;
 }
 
 .nav a {
@@ -108,19 +120,19 @@ html::after {
 	transition: 1s;
 }
 
-.nav a:hover {
+.nav-wrap a:hover {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
 	background: -o-linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
 	background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
-  color: black;
+  color: white;
 	transition: 1s;
 }
 
-.nav a.active {
+.nav-wrap a.active {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
 	background: -o-linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
 	background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
-  color: black;
+  color: white;
 	transition: 1s;
 }
 
@@ -425,9 +437,10 @@ margin-top: 2px;
 </div>
 </div>
 
-<div class="nav">
+<div class="nav-wrap">
   <a onclick="ShowPage1()">welcome!</a>
   <a onclick="ShowPage2(); Function1()">about me!</a>
+	<div class="nav"></div>
 </div>
 
 </div>
