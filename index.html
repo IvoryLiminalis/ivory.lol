@@ -3,10 +3,15 @@
 <head>
 <title>ivory.lol</title>
 <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <script type="text/javascript" src="../lib/konami-code.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
 <script>
+function loadedstyling() {
+  var navwrap = document.getElementById("nav-wrap");
+  navwrap.classList.add("animate__slideInDown");
+}
 
 function Function1() {
   document.getElementById('button1').style.marginTop = '30px';
@@ -467,7 +472,7 @@ margin-top: 2px;
 </div>
 <div class="blurbox"></div>
 
-<div class="nav-wrap">
+<div class="nav-wrap" id="nav-wrap">
 	<a onclick="ShowPage1()">welcome! <span> &#187; </span></a>
   <a onclick="ShowPage2(); Function1()">about me!</a>
 	<div class="nav"></div>
