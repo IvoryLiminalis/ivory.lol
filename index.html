@@ -8,6 +8,10 @@
 
 <script>
 
+function loadedstyling() {
+	document.body.style.opacity = '1';
+}
+
 function Function1() {
   document.getElementById('button1').style.marginTop = '30px';
 }
@@ -297,6 +301,10 @@ body {
   background-attachment: fixed;
 	background-size: cover;
   background-repeat: no-repeat;
+	opacity: 0;
+  -webkit-transition: opacity 3s ease;
+  -o-transition: opacity 3s ease;
+  transition: opacity 3s ease;
 }
 
 #two {
