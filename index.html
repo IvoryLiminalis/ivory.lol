@@ -110,8 +110,8 @@ html::after {
   left: 0;
   bottom: 0;
   right: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
   background: -o-linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), -o-linear-gradient(left, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 200;
   background-size: 100% 2px, 3px 100%;
@@ -125,25 +125,44 @@ html::after {
   text-align: center;
   text-decoration: none;
   font-size: 17px;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
 	transition: 1s;
-	animation: slideInDown 1s ease 0s 1 normal forwards;
+	-webkit-animation: slideInDown 1s ease 0s 1 normal forwards;
+	        animation: slideInDown 1s ease 0s 1 normal forwards;
+}
+
+@-webkit-keyframes slideInDown {
+	0% {
+		-webkit-transform: translateY(-250px);
+		        transform: translateY(-250px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
 }
 
 @keyframes slideInDown {
 	0% {
-		transform: translateY(-250px);
+		-webkit-transform: translateY(-250px);
+		        transform: translateY(-250px);
 	}
 
 	100% {
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
 	}
 }
 
 .nav {
   overflow: hidden;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
 	background: -o-linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
 	background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+	-webkit-transition: 1s;
+	-o-transition: 1s;
 	transition: 1s;
   padding: 14px 16px;
 	white-space: nowrap;
@@ -156,30 +175,40 @@ html::after {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
 	transition: 1s;
 	white-space: nowrap;
 }
 
 .nav a:hover {
   color: white;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
 	transition: 1s;
 	white-space: nowrap;
 }
 
 .nav a.active {
   color: white;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
 	transition: 1s;
 	white-space: nowrap;
 }
 
 .nav-wrap a:hover {
   color: white;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
 	transition: 1s;
 	white-space: nowrap;
 }
 
 .nav-wrap a.active {
   color: white;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
 	transition: 1s;
 	white-space: nowrap;
 }
@@ -336,6 +365,8 @@ body {
 }
 
 #three span {
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
 	transition: 1s ease;
 	background-color: rgb(255, 255, 255);
 	display: -webkit-box;
@@ -346,6 +377,8 @@ body {
 	justify-content: center;
 	white-space: nowrap;
 	margin-top: 10px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
 	width: max-content;
   position: absolute;
 	cursor: default;
@@ -359,7 +392,8 @@ body {
 
 #three span:hover {
 	background-color: rgba(255, 255, 255, 0);
-	filter: none;
+	-webkit-filter: none;
+	        filter: none;
   text-shadow: 0 0 5px #C8C8C8;
 	cursor: default;
   -webkit-transform: translate(-50%, -50%);
@@ -399,8 +433,8 @@ font-family: Roboto, sans-serif;
 font-weight: 0;
 font-size: 14px;
 color: #fff;
-background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
 background: -o-linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #00d2ff), color-stop(0, #ffa6b9), color-stop(0, white), color-stop(0, #ffa6b9), color-stop(0, #00d2ff));
 background: linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
 padding: 20px 30px;
 width: 30px;
@@ -436,6 +470,8 @@ margin-top: 2px;
 }
 
 #one span {
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
 	transition: 1s ease;
 	background-color: rgb(255, 255, 255);
 	display: -webkit-box;
@@ -446,6 +482,8 @@ margin-top: 2px;
 	justify-content: center;
 	white-space: nowrap;
 	margin-top: 10px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
 	width: max-content;
   position: absolute;
 	cursor: default;
