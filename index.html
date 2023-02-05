@@ -127,12 +127,10 @@ html::after {
 
 @keyframes slideInDown {
 	0% {
-		opacity: 0;
 		transform: translateY(-250px);
 	}
 
 	100% {
-		opacity: 1;
 		transform: translateY(0);
 	}
 }
@@ -299,6 +297,26 @@ body {
   background-attachment: fixed;
 	background-size: cover;
   background-repeat: no-repeat;
+}
+
+body p span h1 h2 h3 h4 h5 h6 {
+	animation: slit-in-horizontal 1s ease 0s 1 normal none;*/
+}
+
+@keyframes slit-in-horizontal {
+			
+		0% {
+			transform:translateZ(-800px) rotateX(90deg);
+			opacity:0;
+		}
+		50% {
+			transform:translateZ(-160px) rotateX(87deg);
+			opacity:1;
+		}
+		100% {
+			transform:translateZ(0) rotateX(0);
+		}
+	}
 }
 
 #two {
