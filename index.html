@@ -457,10 +457,11 @@ body {
       transform: translate(-50%, -50%);
 }
 
-#four a img {
-	display: block;
-	position: absolute;
-  left: 50%;
+#four a {
+	display: none;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-image: url("https://i.imgur.com/4S0UoCw.png");
 }
 
 #three span {
@@ -615,7 +616,7 @@ margin-top: 2px;
 	<a>&#187;</a>
   <a onclick="ShowPage2(); Function1()">about me! </a>
 	<a>&#187;</a>
-  <a onclick="ShowPage3(); Function2()">silly! :3 </a>
+  <a onclick="ShowPage3(); Function2()">silly projects! :3 </a>
 <div class="nav"></div>
 </div>
 
@@ -644,9 +645,9 @@ margin-top: 2px;
 </div>
 
 <div id="four">
-	<h1>silly! :3</h1>
+	<h1>silly projects! :3</h1>
 	<p>meow! here are some of my projects i decided to feature here! :3</p>
-	<p>Nova Industries, an analog horror series about a generated liminal unknown and the corporation who designed it looking to take advantage of it.
+	<p><a>Nova Industries</a>, an analog horror series about a generated liminal unknown and the corporation who designed it looking to take advantage of it.
 </div>
 </section>
 </body>
