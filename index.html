@@ -26,29 +26,36 @@ function Toggle1() {
   const x = document.getElementById('one-wrap');
   const x2 = document.getElementById('two');
 	const x3 = document.getElementById('three');
+	const x4 = document.getElementById('four');
   const btn1 = document.getElementById('button1');
   if (x.style.opacity === '1' || x3.style.opacity === '1') {
     x.style.transitionDelay = '0s';
     x2.style.transitionDelay = '1s';
     x3.style.transitionDelay = '0s';
+		x4.style.transitionDelay = '0s';
     x.style.opacity = '0';
     x2.style.opacity = '1';
 		x3.style.opacity = '0';
+		x4.style.opacity = '0';
     x.style.zIndex = '0';
     x2.style.zIndex = '1';
     x3.style.zIndex = '0';
+    x4.style.zIndex = '0';
 		btn1.style.marginTop = '-2px'
 
   } else {
     x.style.transitionDelay = '1s';
     x2.style.transitionDelay = '0s';
     x3.style.transitionDelay = '0s';
+		x4.style.transitionDelay = '0s';
     x.style.opacity = '1';
     x2.style.opacity = '0';
 		x3.style.opacity = '0';
+		x4.style.opacity = '0';
     x.style.zIndex = '1';
     x2.style.zIndex = '0';
     x3.style.zIndex = '0';
+		x4.style.zIndex = '0';
   }
 }
 
