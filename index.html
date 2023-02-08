@@ -10,6 +10,12 @@
 
 <script>
 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
 function loadedstyling() {
   document.getElementById('main').style.opacity = '1';
 }
@@ -182,6 +188,16 @@ html::after {
 	-o-transition: 1s;
 	transition: 1s;
 	white-space: nowrap;
+}
+
+#panel, #flip {
+  text-align: center;
+}
+
+#panel {
+  display: none;
+	padding: 5px;
+	background-color: #323232;	
 }
 
 .nav a:hover {
@@ -527,13 +543,8 @@ margin-top: 2px;
 	<a>&#187;</a>
   <a onclick="ShowPage2(); Function1()">about me! </a>
 	<a>&#187;</a>
-	<ul>
-		<li><a href="#" id="parent">Parent</a>
-			<ul id="submenu">
-			<li><a href="#">Child</a></li>
-			<li><a href="#">Child</a></li>
-			<li><a href="#">Parent</a></li>
-	</ul>
+	<div id="flip">a dropdown</div>
+	<div id="panel">haiiii~ :3</div>
 <div class="nav"></div>
 </div>
 
