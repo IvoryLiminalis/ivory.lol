@@ -11,7 +11,7 @@
 <script>
 
 $(document).ready(function(){
-  $("#flip").click(function(){
+  $("#flip").hover(function(){
     $("#panel").slideToggle("slow");
   });
 });
@@ -539,12 +539,12 @@ margin-top: 2px;
 	</div>
 
 <div class="nav-wrap" id="nav-wrap">
-	<a onclick="ShowPage1()">welcome! <span> &#187; </span></a>
+	<a onclick="ShowPage1()">welcome! </a>
 	<a>&#187;</a>
   <a onclick="ShowPage2(); Function1()">about me! </a>
 	<a>&#187;</a>
-	<div id="flip">a dropdown</div>
-	<div id="panel">haiiii~ :3</div>
+	<a id="flip">a dropdown</a>
+	<a id="panel">haiiii~ :3</a>
 <div class="nav"></div>
 </div>
 
