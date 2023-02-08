@@ -96,7 +96,7 @@ html {
   right: 0;
 	height: 100%;
   color: white;
-  font: 5vw Inconsolata, monospace;
+  font: 2vw Inconsolata, monospace;
   text-shadow: 0 0 5px #C8C8C8;
   background-size: cover;
   overflow: hidden;
@@ -191,6 +191,9 @@ html::after {
 	white-space: nowrap;
 }
 
+@media screen and (max-width: 800px) {
+	font-size: 1rem;
+}
 .nav a.active {
   color: white;
 	-webkit-transition: 1s;
