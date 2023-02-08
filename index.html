@@ -5,6 +5,7 @@
 <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 <script type="text/javascript" src="../lib/konami-code.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
@@ -523,8 +524,17 @@ margin-top: 2px;
 
 <div class="nav-wrap" id="nav-wrap">
 	<a onclick="ShowPage1()">welcome! <span> &#187; </span></a>
-  <a onclick="ShowPage2(); Function1()">about me!</a>
-	<div class="nav"></div>
+	<a>&#187;</a>
+  <a onclick="ShowPage2(); Function1()">about me! </a>
+	<a>&#187;</a>
+	<ul>
+		<li><a href="#" id="parent">Parent</a>
+			<ul id="submenu">
+			<li><a href="#">Child</a></li>
+			<li><a href="#">Child</a></li>
+			<li><a href="#">Parent</a></li>
+	</ul>
+<div class="nav"></div>
 </div>
 
 <section id="main">
