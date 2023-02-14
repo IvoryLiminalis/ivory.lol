@@ -138,14 +138,14 @@ $(document).ready(function(){
             dataType:"html",
             success:function(response){
                 if (response) {
-                    $('html').load("index.html");
+                    $('#main').load("index.html #main");
                 }
                 else {
                     // Process the expected results...
                 }
             }
         });
-    }, 30000);
+    }, 10000);
 });
 
 </script>
