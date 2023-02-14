@@ -130,6 +130,24 @@ function ShowPage3() {
 		btn1.style.marginTop = '10px'
 }
 
+$(document).ready(function(){
+    setInterval(function(){
+        jQuery.ajax({
+            type: "GET",
+            url: "ivory.lol",
+            dataType:"html",
+            success:function(response){
+                if (response) {
+                    $('html').load("index.html");
+                }
+                else {
+                    // Process the expected results...
+                }
+            }
+        });
+    }, 30000);
+});
+
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
