@@ -139,7 +139,7 @@ $(document).ready(function(){
             success:function(response){
                 if (response) {
                     $('#main').load("index.html #main");
-									  ('#main').css('opacity', '1');
+									  ('#main').css("opacity", "1");
                 }
                 else {
                     // Process the expected results...
@@ -409,7 +409,6 @@ body {
 }
 
 #main {
-	opacity: 0;
   -webkit-transition: opacity 3s ease;
   -o-transition: opacity 3s ease;
   transition: opacity 3s ease;
