@@ -7,10 +7,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <script src="js/index.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <style>
+
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 html {
   overflow: hidden;
@@ -37,6 +45,9 @@ html::after {
   left: 0;
   bottom: 0;
   right: 0;
+  background: -o-linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), -o-linear-gradient(left, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 200;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
@@ -229,6 +240,22 @@ a:active {
   cursor: pointer;
 }
 
+#button2 {
+  position: absolute;
+  left: 50%;
+  top: 76%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  -o-transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  transition: 3s cubic-bezier(.47,1.64,.41,.8);
+  z-index: 4;
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
 body {
 	height: 100%;
   overflow: hidden;
@@ -290,6 +317,89 @@ body {
 	pointer-events: none;
 }
 
+#four span {
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+	background-color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+  -ms-flex-pack: center;
+	justify-content: center;
+	white-space: nowrap;
+	margin-top: 10px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+  position: absolute;
+	cursor: default;
+  left: 50%;
+  border-radius: 6px;
+  text-shadow: none;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+#three span {
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+	background-color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+  -ms-flex-pack: center;
+	justify-content: center;
+	white-space: nowrap;
+	margin-top: 10px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+  position: absolute;
+	cursor: default;
+  left: 50%;
+  border-radius: 6px;
+  text-shadow: none;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+#three span:hover {
+	background-color: rgba(255, 255, 255, 0);
+	-webkit-filter: none;
+	        filter: none;
+  text-shadow: 0 0 5px #C8C8C8;
+	cursor: default;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+#container-wrap-wrap {
+  overflow: hidden;
+	-webkit-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+	transition: opacity 3s ease;
+	opacity: 1;
+}
+
+#container-wrap {
+	height: 100%;
+  overflow: hidden;
+  background: -o-radial-gradient(rgba(255, 255, 255, 1), black 120%);
+  background: radial-gradient(rgba(255, 255, 255, 1), black 120%);
+	-webkit-transition: opacity 3s ease;
+	-o-transition: opacity 3s ease;
+	transition: opacity 3s ease;
+	opacity: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
 
 .btn{
@@ -336,6 +446,41 @@ margin-top: 2px;
 border-color: black;
 }
 
+#one span {
+	-webkit-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+	background-color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+  -ms-flex-pack: center;
+	justify-content: center;
+	white-space: nowrap;
+	margin-top: 10px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+  position: absolute;
+	cursor: default;
+  left: 50%;
+  border-radius: 6px;
+  text-shadow: none;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+#one span:hover {
+	background-color: rgba(255, 255, 255, 0);
+  text-shadow: 0 0 5px #C8C8C8;
+	cursor: default;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
 </style>
 </head>
 <body onload="loadedstyling()">
@@ -357,6 +502,7 @@ border-color: black;
 <div id="one">
 	<h1>welcome!</h1>
 	<p>we're all in hell anyways, so how about we enjoy the show?</p>
+	<span>click the trans flag :3</span>
 	</section>
 </div>
 <div id="button1">
