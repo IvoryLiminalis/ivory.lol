@@ -105,8 +105,7 @@ function ShowPage3() {
     x2.style.transitionDelay = '0s';
     x3.style.transitionDelay = '0s';
     x4.style.transitionDelay = '1s';
-		x4.style.visibility = 'visible';
-		x4.style.pointerEvents = "auto";
+		x4.style.pointerEvents = "initial";
     x.style.opacity = '0';
     x2.style.opacity = '0';
     x3.style.opacity = '0';
