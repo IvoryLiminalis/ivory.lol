@@ -251,7 +251,7 @@ html {
   }
   
   body {
-    height: 3000px;
+    height: 100%;
     overflow: hidden;
     background: #001220;
     background-image: url(/img/bg7.svg);
