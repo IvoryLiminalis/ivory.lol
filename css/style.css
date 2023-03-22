@@ -450,6 +450,8 @@ html {
     border-radius: 6px;
     margin-top: 2px;
     border-color: black;
+	  border-style: solid;
+		border-width: 2px;
   }
   
   .btn:hover {
@@ -461,6 +463,8 @@ html {
     transition: 400ms cubic-bezier(.34, 1.56, .64, 1);
     margin-top: 2px;
     border-color: black;
+	  border-style: solid;
+		border-width: 2px;
   }
   
   #one span {
