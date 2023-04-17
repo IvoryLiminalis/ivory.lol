@@ -1,5 +1,5 @@
 function loadedstyling() {
-  document.getElementById('main').style.opacity = '1';
+  document.getElementById('one').style.opacity = '1';
 }
 
 function validation() {
