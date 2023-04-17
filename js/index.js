@@ -2,6 +2,12 @@ function loadedstyling() {
   document.getElementById('main').style.opacity = '1';
 }
 
+function validation() {
+  var x = document.getElementById("notif");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
 function Function1() {
   document.getElementById('button1').style.marginTop = '30px';
 }
