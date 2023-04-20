@@ -520,7 +520,10 @@ button, input[type="submit"], input[type="reset"] {
   color: #fff;
   text-align: center;
 	transform: skew(-20deg);
-  padding: 16px;
+	padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
   position: fixed;
   left: 33.3%;
   bottom: 30px;
