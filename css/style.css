@@ -12,6 +12,7 @@
 * Browsers: last 4 version
 */
 
+/* html element styling for some silly extra effects and stuff :3 */
 
 html {
     overflow: hidden;
@@ -46,7 +47,9 @@ html {
     pointer-events: none;
     overflow: hidden;
   }
-  
+
+  /* cute navbar wrapper + animation for navbar sliding down :3 */
+
   .nav-wrap {
     overflow: hidden;
     background-color: #323232;
@@ -84,6 +87,8 @@ html {
     }
   }
   
+/* a cute, silly trans flag navbar :3 */
+
   .nav {
     overflow: hidden;
     background: -o-linear-gradient(#00d2ff 20%, #ffa6b9 0 40%, white 0 60%, #ffa6b9 0 80%, #00d2ff 0);
@@ -151,6 +156,8 @@ html {
     text-shadow: none;
   }
   
+/* wrapper for "page" one :3 */
+
   #one-wrap {
     position: absolute;
     z-index: 1;
@@ -164,13 +171,16 @@ html {
     transform: translate(-50%, -50%);
     opacity: 1
   }
-  
+
+  /* removed easter egg :3 */
   #secret2 {
     -webkit-transition: opacity 1s ease;
     -o-transition: opacity 1s ease;
     transition: opacity 1s ease;
   }
-  
+
+  /* button arrow styling :3 */
+
   .arrow {
     border: solid white;
     border-width: 0 4px 4px 0;
@@ -193,7 +203,9 @@ html {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
-  
+
+  /* trans flag button container div :3 */
+
   #button1 {
     position: absolute;
     left: 50%;
@@ -210,6 +222,8 @@ html {
     transition-delay: 0.4s;
   }
   
+  /* default text deco removal + some other things~ :3 */
+
   a:link {
     color: white;
     text-decoration: none;
@@ -233,7 +247,7 @@ html {
     text-decoration: none;
     cursor: pointer;
   }
-  
+  /* previously used button styling. may or may not be used later. perhaps it already has been used on an older version of this page? either way you missed it :3 */
   #button2 {
     position: absolute;
     left: 50%;
@@ -249,7 +263,7 @@ html {
     -o-transition-delay: 0.4s;
     transition-delay: 0.4s;
   }
-  
+  /* body styling :3 */
   body {
     height: 100%;
     overflow: hidden;
@@ -260,14 +274,14 @@ html {
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-  
+  /* main style :3 */
   #main {
     -webkit-transition: opacity 3s ease;
     -o-transition: opacity 3s ease;
     transition: opacity 3s ease;
     opacity: 0;
   }
-  
+  /* "page" two style :3 */
   #two {
     opacity: 0;
     -webkit-transition: opacity 1s ease;
@@ -281,7 +295,7 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
+  /* "page" three style :3 */
   #three {
     opacity: 0;
     -webkit-transition: opacity 1s ease;
@@ -295,7 +309,7 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
+  /* "page" four style :3 */
   #four {
     opacity: 0;
     -webkit-transition: opacity 1s ease;
@@ -309,7 +323,7 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
+  /* "page" four default style for "redacted" effect */
   #four span {
     -webkit-transition: 1s ease;
     -o-transition: 1s ease;
@@ -335,7 +349,7 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
+  /* "page" three hover style for "redacted" effect */
   #three span:hover {
     background-color: rgba(255, 255, 255, 0);
     -webkit-filter: none;
@@ -346,7 +360,7 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
+    /* "page" three default style for "redacted" effect */
   #three span {
     -webkit-transition: 1s ease;
     -o-transition: 1s ease;
@@ -372,7 +386,7 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
+    /* "page" four style for "redacted" hover effect */
   #four span:hover {
     background-color: rgba(255, 255, 255, 0);
     -webkit-filter: none;
@@ -383,7 +397,7 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
+   /* container-wrap-wrap styling */
   #container-wrap-wrap {
     overflow: hidden;
     -webkit-transition: opacity 3s ease;
@@ -391,7 +405,7 @@ html {
     transition: opacity 3s ease;
     opacity: 1;
   }
-  
+ /* container-wrap styling */
   #container-wrap {
     height: 100%;
     overflow: hidden;
@@ -402,7 +416,7 @@ html {
     transition: opacity 3s ease;
     opacity: 0;
   }
-  
+  /* "page" five default style */
   #five {
     opacity: 0;
     -webkit-transition: opacity 1s ease;
@@ -418,7 +432,7 @@ html {
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
-  
+  /* button styling with transgender pride flag :3 */
   .btn {
   
     font-family: Roboto, sans-serif;
@@ -453,7 +467,7 @@ html {
 	  border-style: solid;
 		border-width: 2px;
   }
-  
+    /* button hover effect */
   .btn:hover {
     white-space: nowrap;
     overflow: hidden;
@@ -466,7 +480,7 @@ html {
 	  border-style: solid;
 		border-width: 2px;
   }
-  
+  /* "redacted" text effect */
   #one span {
     -webkit-transition: 1s ease;
     -o-transition: 1s ease;
@@ -492,7 +506,7 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  
+  /* hover effect for "redacted" text effect */
   #one span:hover {
     background-color: rgba(255, 255, 255, 0);
     text-shadow: 0 0 5px #C8C8C8;
@@ -501,7 +515,7 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }  
-
+/* remove default button styling */
 button, input[type="submit"], input[type="reset"] {
   background-color: transparent;
   border-width: 0;
@@ -512,7 +526,7 @@ button, input[type="submit"], input[type="reset"] {
   line-height: inherit;
   padding: 0;
 }
-
+/* style a supportive, validating message! */
 #notif {
     min-width: 290px;
     background-color: #333;
@@ -530,7 +544,7 @@ button, input[type="submit"], input[type="reset"] {
 		border-right: 5px solid white;
 		border-bottom: 5px solid white;
 }
-
+/* show a supportive, validating message! */
 #notif.show {
   visibility: visible;
   -webkit-animation: fadein 1.2s, fadeout 1.2s 4.5s;
@@ -557,3 +571,4 @@ button, input[type="submit"], input[type="reset"] {
   from {left: 0px; opacity: 1;}
   to {left: -2000px; opacity: 1;}
 }
+
