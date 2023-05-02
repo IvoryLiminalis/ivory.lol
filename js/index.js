@@ -5,7 +5,7 @@ function loadedstyling() {
 function validation() {
   var x = document.getElementById("notif");
   x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 6000);
 }
 
 function Function1() {
