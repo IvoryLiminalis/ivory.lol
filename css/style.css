@@ -266,13 +266,13 @@ html {
   /* body styling :3 */
   body {
     height: 100%;
-    overflow: hidden;
     background: #001220;
     background-image: url(/img/bg7.svg);
-    background-position-x: center;
-    background-position-y: bottom;
+    background-position: center 400px;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-position-y 1s;
   }
   /* main style :3 */
   #main {
