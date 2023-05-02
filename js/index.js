@@ -1,5 +1,6 @@
 function loadedstyling() {
   document.getElementById('main').style.opacity = '1';
+	document.getElementById('body').style.backgroundPosition = "center 400px";
 }
 
 function validation() {
