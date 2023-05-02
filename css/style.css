@@ -310,7 +310,7 @@ html {
     transform: translate(-50%, -50%);
   }
   /* "page" four style :3 */
-  #four * {
+  #four {
     opacity: 0;
     -webkit-transition: opacity 1s ease;
     -o-transition: opacity 1s ease;
@@ -418,7 +418,7 @@ html {
     opacity: 0;
   }
   /* "page" five default style */
-  #five * {
+  #five {
     opacity: 0;
     -webkit-transition: opacity 1s ease;
     -o-transition: opacity 1s ease;
@@ -573,4 +573,3 @@ button, input[type="submit"], input[type="reset"] {
   from {left: 0px; opacity: 1;}
   to {left: -2000px; opacity: 1;}
 }
-
