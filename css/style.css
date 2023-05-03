@@ -272,7 +272,7 @@ html {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: background-position-y 1s;
+    transition: background-position-y 1s ease-in-out;
   }
   /* main style :3 */
   #main {
