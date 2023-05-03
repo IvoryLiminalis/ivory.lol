@@ -272,14 +272,14 @@ html {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: background-position-y 1s ease-in-out;
+    transition: background-position-y 2.4s ease;
   }
   /* main style :3 */
   #main {
     -webkit-transition: opacity 3s ease;
     -o-transition: opacity 3s ease;
     transition: opacity 3s ease;
-		transition-delay: 1.5s;
+		transition-delay: 2.5s;
     opacity: 0;
   }
   /* "page" two style :3 */
