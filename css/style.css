@@ -318,7 +318,7 @@ html {
     letter-spacing: normal;
     opacity: 1;
   }
-}
+		}
 @keyframes tracking-in-contract {
   0% {
     letter-spacing: 1em;
