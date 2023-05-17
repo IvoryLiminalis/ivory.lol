@@ -2,6 +2,11 @@ function loadedstyling() {
 	document.getElementById('body').style.backgroundPosition = "center 200px";
 }
 
+setTimeout(function() {
+  var x = document.getElementById("main");
+  x.className = "main";
+}, 2550);
+
 function validation() {
   var x = document.getElementById("notif");
   x.className = "show";
