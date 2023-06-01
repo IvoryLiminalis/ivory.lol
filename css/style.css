@@ -520,9 +520,11 @@ html {
     white-space: nowrap;
     cursor: pointer;
     border-radius: 6px 6px 0px 6px
-    margin-top: 2px;
-    border-left: 2px black solid
-    border-top: 2px black solid
+    border-left: 2px black solid;
+    border-top: 2px black solid;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
     /* button hover effect */
   .btn:hover {
@@ -532,10 +534,12 @@ html {
     -webkit-transition: 400ms cubic-bezier(.34, 1.56, .64, 1);
     -o-transition: 400ms cubic-bezier(.34, 1.56, .64, 1);
     transition: 400ms cubic-bezier(.34, 1.56, .64, 1);
-    margin-top: 2px;
-    border-color: black;
-	  border-style: solid;
-		border-width: 2px;
+    border-radius: 6px 6px 0px 6px
+    border-left: 2px black solid;
+    border-top: 2px black solid;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   /* "redacted" text effect */
   #one span {
